@@ -1,0 +1,39 @@
+.mission-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    align-items: center;
+  }
+  
+  .mission-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .mission-content .text {
+    flex: 1;
+  }
+  
+  .mission-content .image {
+    flex: 1;
+  }
+  
+  .mission-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  /* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .mission-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-content img {
+    width: 80%;  /* Adjust image width on mobile */
+    margin: 0 auto;
+  }
+}

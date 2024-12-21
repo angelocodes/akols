@@ -1,0 +1,59 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+  background: rgb(247, 239, 200); /* Fallback color */
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Consistent text shadow */
+}
+
+.hero .btn-primary {
+  padding: 10px 20px;
+  background: #00b640;
+  color: rgb(247, 239, 200);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background: #007a2f; /* Darker green for hover effect */
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Adds a transparent overlay for better text contrast */
+  z-index: 1;
+}
+
+.hero .container {
+  z-index: 2; /* Ensures content is above the overlay */
+}

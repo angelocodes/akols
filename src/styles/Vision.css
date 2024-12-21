@@ -1,0 +1,48 @@
+.vision-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.vision-card {
+  background-color: #f7efc8; /* Cream background */
+  border: 1px solid #00b640; /* Green border */
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.vision-content .text {
+  flex: 1;
+}
+
+.vision-content .image {
+  flex: 1;
+}
+
+.vision-content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .vision-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vision-content img {
+    width: 80%;  /* Adjust image width on mobile */
+    margin: 0 auto;
+  }
+}
